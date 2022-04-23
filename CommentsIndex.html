@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="portuguese">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Comment</title>
+    <link rel="stylesheet" href="./CommentsCSS.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="Logo">
+            <span>Power Comments</span>
+        </div>
+        <section>
+            <div class="textButtons">
+                <figure id="buttonsText">
+                    <ul class="MenuToggle" id="MenuToggle">
+                        <li class="small">Pequeno</li>
+                        <li class="normal">Normal</li>
+                        <li class="big">Grande</li>
+                    </ul>
+                    <img src="./Content/Size.svg" alt="Size">
+                    <img src="./Content/Uppcase.svg" alt="UpperCase" class="uppercase">
+                    <img src="./Content/Negrito.svg" alt="Bold">
+                    <img src="./Content/Adjust.svg" alt="Adjust" class="justify">
+                    <img src="./Content/AdjustLeft.svg" alt="AdjustLeft" class="left">
+                    <img src="./Content/Center.svg" alt="Center" class="center">
+                    <img src="./Content/Italic.svg" alt="Italic">
+                    <img src="./Content/Paragraph.svg" alt="Paragraph">
+                </figure>
+            </div>
+            <div class="areaInput">
+                <div class="name">
+                    <img src="./Content/Profile.svg" alt="Profile">
+                    <span>Escrever seu NomeID</span>
+                    <button>Cadastra-se<span>/</span>Login</button>
+                </div>
+                <textarea placeholder="(escrever aqui)" class="Write" id="textArea"></textarea>
+                <button class="send" id="buttonSend">Enviar</button>
+            </div>
+            <div class="comments" id="comments">
+                <span class="hr"></span>
+                <div class="post" id="post">
+                    <div class="IDspace">
+                        <img src="./Content/Profile.svg" alt="Profile">
+                        <span class="ID">Escreva seu NomeID</span>
+                    </div>
+                    <div class="textPosted" id="postedText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</div>
+                </div>
+                <span class="hr"></span>
+            </div>
+        </section>
+        <div class="empty" id="empty"></div>
+    </main>
+    <script src="./CommentsJavaScript.js"></script>
+</body>
+</html>
