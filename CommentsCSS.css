@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Myriad";
+    src: url("./Content/Fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+*{margin: 0;box-sizing: content-box;}
+
+.uppercase{text-transform: uppercase;}
+.small{font-size: 0.6rem;}
+.normal{font-size: 1.0rem;}
+.big{font-size: 1.6rem;}
+.justify{text-align: justify;}
+.left{text-align:left;}
+.center{text-align:center;}
+
+
+
+body{
+    background-color: white;
+    margin: 0 30%;
+}
+main{
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    border-left: solid 1px #29ABE2;
+    border-right: solid 1px #29ABE2;
+}
+section{
+    display: grid;
+    grid-template-rows: 20px 200px auto;
+    margin: 0 10%;
+}
+
+
+
+.Logo{
+    margin-top: 7px;
+    font-size: 1.6rem;
+}
+.Logo span{
+    color: #29ABE2;
+    font-family: Myriad;
+    margin-left: 15px;
+}
+.Logo span::before{
+    content: " ";
+    width: 210px;
+    position: absolute;
+    height: 1px;
+    transform: translate(-15px,25px);
+    background-color: #FF8A7B;
+}
+
+
+
+.textButtons figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.MenuToggle{display: none;}
+.MenuToggleON{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px 5px;
+    transform: translate(-260px,10px);
+    flex-direction: column;
+    background-color: white;
+    border: solid #E9361F 1px;
+    z-index: 5;
+}
+.MenuToggleON li{
+    list-style: none;
+    font-family: Myriad;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.MenuToggleON li:active{
+    list-style: none;
+    font-family: Myriad;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #FF8A7B;
+}
+
+.textButtons img{
+    height: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.textButtons img:active{
+    border: solid #FF8A7B 1px;
+}
+
+
+
+
+.name{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    border: solid #E9361F 1px;
+    margin-top: 5px;
+}
+.name img{
+    margin-left: 3px;
+    height: 30px;
+}
+.name span{
+    font-family: Myriad;
+    font-size: 1rem;
+    margin-left: 3px;
+    color: #1F80AA;
+}
+.name button{
+    display: flex;
+    align-items: center;
+    font-family: Myriad;
+    font-size: 0.8rem;
+    margin-left: 3px;
+    color: #FFA195;
+    background-color: #AB493D;
+    border: solid #FFA195 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0px 5px;
+    margin-left: 20px;
+}
+.name button span{
+    color: #FFA195;
+    font-size: 1rem;
+    margin: 0 3px;
+
+}
+
+
+.Write{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 6px 0px 60px 0px;
+    border: solid #29ABE2 1px;
+    outline: none;
+    font-family: Myriad;
+    font-size: 1rem;
+    resize: none;
+}
+
+.send{
+    margin-top: 10px;
+    font-family: Myriad;
+    font-size: 1.6rem;
+    color: #29ABE2;
+    background-color: white;
+    border: solid 1px #E9361F;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.send:active{
+    background-color: #AB493D;
+}
+
+
+
+.comments{
+    position: relative;
+    height: 100%;
+    margin-bottom: 60px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #E9361F;
+    position: absolute;
+}
+
+.post img{
+    height: 30px;
+    z-index: 5;
+}
+.IDspace{
+    display: flex;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.ID{
+    color: #1F80AA;
+    font-family: Myriad;
+    margin-left: 13px;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+.ID::before{
+    content: " ";
+    width: 160px;
+    position: absolute;
+    height: 1px;
+    transform: translate(-15px,16px);
+    background-color: #FF8A7B;
+}
+.textPosted{
+    font-family: Myriad;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.empty{
+    padding: 80px 0;
+}
+
+@media (max-width:1200px){
+    body{margin: 0%;}
+    .textPosted,.Write{font-size: 1rem;}
+    .name{height: auto;}
+    .name button {font-size: 0.8rem;}
+    .areaInput{margin-top: 20px;}
+    main{border-left: 0px;border-right: 0px;}
+    section{grid-template-rows: 20px 250px 590px;margin: 4%;}
+    .textButtons img{margin: 0px 10px;}
+    .MenuToggleON{transform: translate(-340px,25px);}
+    .MenuToggleON li{font-size: 1.2rem;}
+    .textButtons img{height: 30px;}
+
+}
